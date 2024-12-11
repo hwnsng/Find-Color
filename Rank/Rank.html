@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!--랭킹 페이지-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <header>
+    <button id="back-button"> <!--홈으로 가는 버튼-->
+      <i class="fas fa-arrow-left"></i> <!--font-awesome 사용-->
+    </button>
+    <h1 class="title" onclick="TitleClick()">Ranking</h1>
+    <div>
+      <button onclick="clearAllRanking()">랭킹 초기화</button> <!--랭킹 초기화 하는 버튼-->
+    </div>
+  </header>
+
+  <main>
+    <table id="ranking-table"> <!--랭킹 테이블-->
+      <thead>
+        <tr>
+          <th>랭킹</th>
+          <th>이름</th>
+          <th>스테이지</th>
+          <th>점수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--랭킹 데이터들 추가-->
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

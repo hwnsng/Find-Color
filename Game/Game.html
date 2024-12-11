@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!--게임 페이지-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Color</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <header>
+    <div class="head-left-box">
+      <h1 class="title" onClick="ClickLogo()">Find Color</h1>
+    </div>
+  </header>
+
+  <main id="game-container">
+    <div id="game-info">
+      <h2 id="stage-display">Stage : 1</h2>
+      <div id="time-left">남은 시간 : 15초</div>
+      <div id="timer">
+        <div id="time-bar"></div>
+      </div>
+      <div id="game-board"></div>
+      <div id="score-display">Score: 0</div>
+      <div><span id="nickname"></span>님 환영합니다</div>
+    </div>
+  </main>
+
+  <!-- 게임 종료 메시지 추가 -->
+  <div id="game-over-message" style="display:none;">
+    <div class="game-over-content">
+      <h2>게임 종료</h2>
+      <h2>스테이지 : <span id="final-stage"></span></h2>
+      <p>점수: <span id="final-score"></span>점</p>
+      <img src="./img/defeat.jpg" id="result-img" /> <!--이미지 삽입 완료-->
+      <div id="buttons-box">
+        <button onclick="restartGame()">다시 시작</button> <!--게임 재시작 버튼-->
+        <button onclick="goHome()">홈으로 가기</button> <!--홈으로 가는 버튼-->
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

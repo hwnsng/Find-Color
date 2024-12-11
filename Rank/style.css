@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+#back-button { /* 홈으로 가기 버튼 */
+  background: none;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+.title { /* 헤더바 가운데 Ranking */
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+main {
+  margin: 30px auto;
+  width: 80%;
+}
+
+/* 랭킹 표 table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e9e9e9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td {
+  font-size: 16px;
+}
+/* 미디어쿼리 사용 */
+@media (max-width: 600px) {  /* 화면이 가로로 600px 이하가 되면 랭킹과 이름만 표시 */
+  thead th:nth-child(3),
+  thead th:nth-child(4),
+  tbody td:nth-child(3),
+  tbody td:nth-child(4) {
+    display: none;
+  }
+}

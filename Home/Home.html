@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!--메인 페이지-->
+  <meta charset="UTF-8">
+  <title>Find Color</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--구글폰트 사용-->
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="head-left-box">
+      <h1 class="title" onClick="ClickLogo()">Find Color</h1>
+    </div>
+    <div id="nickname-container">
+      <form>
+        <input type="text" id="nickname-input" maxlength="13" placeholder="닉네임을 입력해주세요" />
+        <button id="save-button">Save</button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 130px;">
+      <div class="on-button-title">
+        <h1>다른 색깔을 찾아라!</h1>
+      </div>
+      <div class="button-box">
+        <button class="start" onclick="ClickStart()">게임 시작</button>
+        <button class="rank" onclick="ClickRank()">랭크 보기</button>
+      </div>
+    </div>
+    <footer>
+      <!--하이퍼링크 사용-->
+      <a style="font-size: 20px; margin-right: 50px;" href="https://portfolio-hwnsngs-projects.vercel.app/" target="_blank">By HwanSeong Kim</a>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
