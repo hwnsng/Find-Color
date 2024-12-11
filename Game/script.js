@@ -173,5 +173,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function ClickLogo(){
-  location.href = '/Home/Home.html';
+  location.href = '/index.html';
 }

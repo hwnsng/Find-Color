@@ -65,5 +65,5 @@ function clearAllRanking() { // 랭킹 차트 초기화
 
 
 function TitleClick() {
-  location.href = '/Home/Home.html';
+  location.href = '/index.html';
 }
