@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const backButton = document.getElementById("back-button");
   const rankingTableBody = document.querySelector("#ranking-table tbody");
+  const nickName = document.getElementById("nickname");
+  const savedNickname = localStorage.getItem("nickname");
 
   const allGameData = JSON.parse(localStorage.getItem("gameData")) || [];
   const currentNickname = localStorage.getItem("nickname");
@@ -62,8 +64,21 @@ function clearAllRanking() { // 랭킹 차트 초기화
     alert("랭킹을 초기화할 권한이 없습니다.");
   }
 }
-
+if(savedNickname === "admin"){
+  function ShowTableReset() {
+    btnBox.innerHTML = `
+    <button id="clearAllRanking" class="rankReset">랭킹 초기화</button>
+  `;
+  const editButton = document.getElementById("clearAllRanking");
+    editButton.addEventListener("click", () => {
+      localStorage.removeItem("gameData");
+      localStorage.removeItem("finalScore");
+      localStorage.removeItem("finalStage");
+      location.reload();
+    });
+  }
+}
 
 function TitleClick() {
-  location.href = '/index.html';
+  location.href = '/Home/Home.html';
 }

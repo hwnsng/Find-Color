@@ -1,33 +1,68 @@
+@font-face {
+  font-family: 'ONE-Mobile-Title';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CookieRun-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
   text-align: center;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  position: relative;
-}
-#back-button { /* 홈으로 가기 버튼 */
+#back-button {
   background: none;
   border: none;
   color: black;
-  font-size: 24px;
+  font-size: 50px;
   cursor: pointer;
-  position: absolute;
-  left: 20px;
+  margin-left: 45px;
+  transition: all 0.5s;
 }
-.title { /* 헤더바 가운데 Ranking */
-  font-size: 48px;
-  font-weight: bold;
-  margin: 0;
+#back-button:hover{
+  transform: scale(1.2);
 }
-
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 120px;
+  background-color: white;
+}
+.head-left-box{
+  display: flex;
+  width: 550px;
+  height: 120px;
+  align-items: center;
+  margin-left: 60px;
+}
+nav{
+  height: 50px;
+}
+.rankReset{
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 1000;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 45px;
+  transition: all 0.5s;
+}
+.rankReset:hover{
+  transform: scale(1.1);
+  background-color: #bfbfbf
+}
 main {
   margin: 30px auto;
   width: 80%;

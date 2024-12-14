@@ -18,15 +18,14 @@ function startGame() {
 
   if (savedNickname === "admin") {
     score = 100000000000000000000;
-    stage = 100000000000000000000;
   } else {
     score = 0;
-    stage = 0;
   }
   
-  time = 15;
+  stage = 0;
+  time = 10;
   boardSize = 2;
-  colorDifference = 40;
+  colorDifference = 50;
 
   updateScore();
   updateStage();
@@ -114,7 +113,7 @@ function nextWave() {
   if (stage <= 45) {
     colorDifference = Math.max(50, colorDifference - 1);
   } else {
-    colorDifference = Math.max(5, colorDifference - 5);
+    colorDifference = Math.max(10, colorDifference - 5);
   }
   updateStage();
   createBoard();
@@ -173,5 +172,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function ClickLogo(){
-  location.href = '/index.html';
+  location.href = '/Home/Home.html';
 }

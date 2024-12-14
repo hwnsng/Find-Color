@@ -1,5 +1,5 @@
 function ClickLogo() {  
-  location.href = "/index.html";
+  location.href = "/Home/Home.html";
 }
 function ClickStart() {
   location.href = "/Game/Game.html";
